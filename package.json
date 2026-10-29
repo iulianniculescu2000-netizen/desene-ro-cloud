@@ -1,0 +1,12 @@
+{
+  "name": "stremio-desene-ro",
+  "version": "1.0.0",
+  "description": "Addon Stremio pentru Desene Animate Vechi (1990-2010) Dublate in Romana (CN, Jetix, Fox Kids)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bencode": "^4.0.1"
+  }
+}

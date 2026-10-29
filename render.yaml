@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: desene-ro
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /manifest.json
+    envVars:
+      - key: DESENE_CLOUD
+        value: "1"
+      - key: HOST
+        value: 0.0.0.0
+      - key: RELAY_SECRET
+        generateValue: true
